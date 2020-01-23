@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+#stripe1 {
+  animation-name: stripe1;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-delay: 0.5s;
+}
+
+#stripe2 {
+  animation-name: stripe2;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-delay: 0.5s;
+}
+
+#stripe3 {
+  animation-name: stripe3;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-delay: 0.5s;
+}
+
+#stripe4 {
+  animation-name: stripe4;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-delay: 0.5s;
+}
+
+#stripe5 {
+  animation-name: stripe5;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-delay: 0.5s;
+}
+
+@keyframes stripe1 {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes stripe2 {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes stripe3 {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes stripe4 {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes stripe5 {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  height: 100vh;
+  font-family: "Lato", sans-serif;
+  font-size: 3.5vw;
+  font-weight: 300;
+  color: white;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  margin: 8px 0;
+}
+.container .stripe {
+  width: 20%;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  line-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.container .overlay:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  opacity: 0.05;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: skew(30deg) scaleY(1) translate(0, 0);
+  transform: skew(30deg) scaleY(1) translate(0, 0);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.container .overlay:hover:before {
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: scale(2) translate(0, 0);
+  transform: scale(2) translate(0, 0);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+#stripe1 {
+  background-color: #244F75;
+}
+
+#stripe2 {
+  background-color: #60BFBF;
+}
+
+#stripe3 {
+  background-color: #8C4B7E;
+}
+
+#stripe4 {
+  background-color: #F8BB44;
+}
+
+#stripe5 {
+  background-color: #F24B4B;
+}
+
+#stripe1 {
+  margin-right: 3px;
+}
+
+#stripe2 {
+  margin-right: 3px;
+}
+
+#stripe3 {
+  margin-right: 3px;
+}
+
+#stripe4 {
+  margin-right: 3px;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,20 @@
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+$font: 'Lato', sans-serif;
+
+// colors
+$color1: #244F75;
+$color2: #60BFBF;
+$color3: #8C4B7E;
+$color4: #F8BB44;
+$color5: #F24B4B;
+$colors: $color1, $color2, $color3, $color4, $color5;
+
+
+// animations
+$translate1: -100%, 0, 0;
+$translate2: 0, +100%, 0;
+$translate3: 0, -100%, 0;
+$translate4: 0, +100%, 0;
+$translate5: +100%, 0, 0;
+$translates: $translate1, $translate2, $translate3, $translate4, $translate5;
